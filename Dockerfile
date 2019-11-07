@@ -4,7 +4,7 @@ RUN yum -y update
 RUN yum -y upgrade
 RUN yum -y install chrony
 
-CMD [ "mkdir", "/app" ]
+RUN mkdir /app
 COPY . /app
 
 # ntp port
